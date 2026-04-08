@@ -91,9 +91,3 @@ start index.html
 | 🌐 Live Site | [banabir4870.github.io/english-janala](https://banabir4870.github.io/english-janala/) |
 | 💻 GitHub Repository | [github.com/your-username/english-janala](https://github.com/banabir4870/english-janala) |
 
-
----
-
-## 📄 License
-
-This project is open source and available under the [MIT License](./LICENSE).
