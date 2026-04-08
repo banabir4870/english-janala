@@ -63,7 +63,7 @@ This project uses CDN-based libraries:
 **1. Clone the repository**
 
 ```bash
-git clone https://github.com/your-username/english-janala.git
+git clone https://github.com/banabir4870/english-janala.git
 cd english-janala
 ```
 
