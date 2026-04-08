@@ -1,116 +1,99 @@
-# ENGLISH <img width="25px" src="./assets/logo.png" /> JANALA
+# English <img width="28px" src="./assets/logo.png" /> Janala
+
+**English Janala** is an interactive vocabulary learning web application that helps users build their English skills through structured lessons, word cards, pronunciation tools, and a modal-based word detail view.
+
 
 ---
 
-## ⚡ API Endpoints
+<img width="1890" height="958" alt="english-janala" src="https://github.com/user-attachments/assets/2df65171-ddb2-4314-a8e3-f81e491668f3" />
 
-1. Get ⚡ All Levels
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| **HTML5** | Page structure & semantic markup |
+| **CSS3** | Custom styles & font configuration |
+| **JavaScript (ES6+)** | DOM manipulation, API calls, interactivity |
+| **Tailwind CSS v4** | Utility-first styling via CDN |
+| **DaisyUI v5** | Pre-built UI components (navbar, modal, tabs) |
+| **Font Awesome 7** | Icons throughout the UI |
+| **Google Fonts** | Poppins (English) & Hind Siliguri (Bangla) |
+
+---
+
+## ✨ Features
+
+- 📚 **Dynamic Lesson Buttons** — Lesson levels are loaded dynamically from the API on page load
+- 🟦 **Active Lesson Highlight** — The currently selected lesson button is visually highlighted
+- 🃏 **Word Cards** — Vocabulary words displayed in a card layout with meaning and pronunciation
+- 🔍 **Word Detail Modal** — Click the info icon to open a modal showing full word details including synonyms and example sentences
+- 🔊 **Voice Pronunciation** — Click the sound icon to hear the word spoken aloud using the Web Speech API
+- ⚠️ **Empty Lesson Handling** — Shows a friendly message when a lesson has no vocabulary yet
+- ⏳ **Loading Spinner** — Shown while vocabulary data is being fetched from the API
+- 🔎 **Search Functionality** — Search for specific words and display results in real time
+- ❤️ **Save Words** — Bookmark words using a heart icon and view saved words in a separate section
+- ❓ **FAQ Section** — Frequently asked questions section for user guidance
+- 📱 **Responsive Design** — Fully responsive layout for desktop and mobile
+
+---
+
+
+## 📦 Dependencies
+
+This project uses CDN-based libraries:
+
+- Tailwind CSS (via CDN)
+- DaisyUI (via CDN)
+- Font Awesome
+- Google Fonts (Poppins, Hind Siliguri)
+
+---
+
+## 🚀 Getting Started (Local Setup)
+
+### Prerequisites
+
+- Any modern web browser (Chrome, Firefox, Edge, etc.)
+- No Node.js or build step required — this is a static HTML project
+
+### Installation
+
+**1. Clone the repository**
 
 ```bash
-https://openapi.programming-hero.com/api/levels/all
+git clone https://github.com/your-username/english-janala.git
+cd english-janala
 ```
 
-1. Get ⚡ Words by Levels <br/>
-   https:// openapi.programming-hero.com/api/level/{id}
+**2. Open the project**
+
+Simply open `index.html` in your browser:
 
 ```bash
-https://openapi.programming-hero.com/api/level/5
+# On macOS
+open index.html
+
+# On Linux
+xdg-open index.html
+
+# On Windows
+start index.html
 ```
 
-1. Get ⚡ Words Detail <br/>
-   https:// openapi.programming-hero.com/api/word/{id}
+---
 
-```bash
-https://openapi.programming-hero.com/api/word/5
-```
+## 🔗 Relevant Links
 
-1. Get ⚡ All Words <br/>
+| Resource | Link |
+|---|---|
+| 🌐 Live Site | [banabir4870.github.io/english-janala](https://banabir4870.github.io/english-janala/) |
+| 💻 GitHub Repository | [github.com/your-username/english-janala](https://github.com/banabir4870/english-janala) |
 
-```bash
-https://openapi.programming-hero.com/api/words/all
-```
-
-# Work To do
-
-### 1. Show Levels on The UI
-
-- [ ] Show a center-aligned heading as Figma
 
 ---
 
-- [ ] Create dynamically generated buttons from **API-01** for each lesson
-- [ ] Lesson Buttons will be displayed on page load
+## 📄 License
 
----
-
-### 2. Show Word Cards Based on Level
-
-- [ ] Show a default text that will be displayed in the Vocabulary section initially
-- [ ] on Clicking a Specific Lesson Button Load All the words from **API-02**
-- [ ] Display all words for a selected lesson in a card format, showing:
-
-  - [ ] Word
-  - [ ] Word meaning & pronunciation
-  - [ ] Two buttons with relevant icons as per Figma
-
-- [ ] Show **\*No Word Found** message if no words exist for a lesson
-
----
-
-- [ ] Create functionality to highlight the active lesson button
-
----
-
-### 3. Use Different Color on The Active Level Button
-
-- [ ] After Successfully Loading words of a level , diffirentiate the button so user can understand which button is active
-
-### 4. Vocabulary Details
-
-- [ ] Create functionality to open a modal when clicking the details icon
-- [ ] Data will be load from **API-03**
-- [ ] modal will displays:
-  - [ ] Word with pronunciation
-  - [ ] Example sentence
-  - [ ] Synonyms
-  - [ ] A "Complete Learning" button to close the modal
-
-### 5. Handling Invalid Data
-
-- [ ] avoid displaying falsy values like `undefined` or `null`
-- [ ] display relevant words if no data is found
-
-### 6. Loading Spinner
-
-- [ ] Create a loading spinner that will be display when vocabulary is loading from API
-
-### 7. Implement Search Functionality
-
-- [ ] Take a input Box.
-- [ ] on Changing value It will Search word and show in the UI.
-- [ ] If anyone Do search reset active button
-
-### 8. Save Word Feature
-
-- [ ] in the UI of Card add a button `Heart icon`
-- [ ] on Clicking it. Store the Word in the Saved Box
-- [ ] Show Saved words in a Different Section.
-
-### 9. Speak your Vocabularies
-
-- [ ] Create functionality for voice pronunciation of vocabulary words
-- [ ] Use below function and implement on clicking sound icon
-
-```js
-function pronounceWord(word) {
-  const utterance = new SpeechSynthesisUtterance(word);
-  utterance.lang = "en-EN"; // English
-  window.speechSynthesis.speak(utterance);
-}
-```
-
-For More >> you can explore this implementation 👉 [https://codepen.io/Ferdous-Zihad/pen/PwoJMmJ](https://codepen.io/Ferdous-Zihad/pen/PwoJMmJ)
-
----
-Bonus : How to create Private Repository for next assignments
-## Test Repo - :  https://classroom.github.com/a/Fgjib-lr
+This project is open source and available under the [MIT License](./LICENSE).
